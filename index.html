@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>yoda-speaks</title>
+    <style>
+        textarea{
+            width:50%;
+            height:10vh;
+            display:block;
+            border:1px solid black;
+            margin:auto;
+            padding:1rem 1rem;
+            text-align: center;
+            border-radius: 1rem;
+            position: center;
+        }
+
+        #output{
+            border:1px solid black;
+            height:10vh;
+            width:50%;
+            margin:auto;
+            padding:1rem 1rem;
+            border-radius: 1rem;
+            position: center;
+        }  
+    </style>
+
+    <link href="styles.css" rel="stylesheet" />
+
 </head>
 <body>
-    <hi>Yoda speaks</hi>
+    <div class="hero-img">
+            <h1 class="hero-heading">Yoda speaks</h1>
+        <textarea id="txt-input" placeholder="put your sentence in english here and we will convert it to banana!"></textarea>
+        <div class="btn-align"> 
+            <button id="btn-translator" class="button" style="vertical-align:middle"><span>Translator</span></button>
+        </div>
+        <textarea id="output" placeholder="Output is displayed here 👇"></textarea>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
